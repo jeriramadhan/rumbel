@@ -29,6 +29,7 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  /* color: #c4c4c4; */
   color: #7b838a;
 }
 
@@ -455,7 +456,7 @@ button:focus {
   z-index: 1;
   min-height: 900px;
   position: relative;
-  background: url(../img/kumham/banner.jpg) no-repeat center;
+  background: url(../img/cat.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -543,7 +544,7 @@ button:focus {
 
 .banner_area {
   position: relative;
-  background: url(../img/banner/banner2.jpg) no-repeat center center;
+  background: url(../img/cat.jpg) no-repeat center center;
   z-index: 1;
   min-height: 392px;
   padding-top: 0 !important;
