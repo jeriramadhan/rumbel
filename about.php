@@ -332,19 +332,19 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-6 single-footer-widget">
-          <h4>Pelatihan Terpopuler</h4>
+          <h4>Info</h4>
           <ul>
-            <li><a href="#">Keterampilan</a></li>
+            <li><a href="about.php">Tentang Kami</a></li>
 
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 single-footer-widget">
-          <h4>Link</h4>
+          <h4>Lokasi</h4>
           <ul>
-            <li><a href="#">Pelatihan</a></li>
+            <li><a href="https://www.google.co.id/maps/@-6.3304915,106.9042088,19.34zhttps://www.google.co.id/maps/@-6.3304915,106.9042088,19.34z">Lokasi Kami</a></li>
           </ul>
         </div>
-        <div class="col-lg-2 col-md-6 single-footer-widget">
+        <!-- <div class="col-lg-2 col-md-6 single-footer-widget">
           <h4>Kegiatan</h4>
           <ul>
             <li><a href="#">Jobs</a></li>
@@ -355,8 +355,8 @@
           <ul>
             <li><a href="#">Petunjuk Pelaksanaan</a></li>
           </ul>
-        </div>
-        <div class="col-lg-4 col-md-6 single-footer-widget">
+        </div> -->
+        <!-- <div class="col-lg-4 col-md-6 single-footer-widget">
           <h4>Berita</h4>
           <p>Berita Terbaru</p>
           <div class="form-wrap" id="mc_embed_signup">
@@ -373,7 +373,7 @@
               <div class="info"></div>
             </form>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="row footer-bottom d-flex justify-content-between">
         <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
@@ -383,10 +383,8 @@
 
         </p>
         <div class="col-lg-4 col-sm-12 footer-social">
-          <a href="#"><i class="ti-facebook"></i></a>
-          <a href="#"><i class="ti-twitter"></i></a>
-          <a href="#"><i class="ti-dribbble"></i></a>
-          <a href="#"><i class="ti-linkedin"></i></a>
+          <a href="https://www.facebook.com/noverio.noverio.92"><i class="ti-facebook"></i></a>
+          <a href="https://instagram.com/cathouse_knd?igshid=1n3itg4zvuaq7"><i class="ti-instagram"></i></a>
         </div>
       </div>
     </div>
