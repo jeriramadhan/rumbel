@@ -25,7 +25,7 @@
   ?>
 
   <div class="col-sm-6" style="padding-top: 20px; padding-bottom: 20px;">
-    <h3>Cek Hasill Feedback</h3>
+    <h3>Cek Hasil Feedback</h3>
     <hr>
 
       <table class="table table-stripped table-hover datatab">
@@ -55,9 +55,9 @@
               <td>
                 <!-- Button untuk modal -->
                 <a href="#" type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#myModal<?php echo $data['id']; ?>">Edit</a>
+                <a href="#" type="button" class="btn btn-danger btn-md" data-toggle="modal" data-target="#myModal2<?php echo $data['id']; ?>">Hapus</a>
               </td>
             </tr>
-            <!-- Modal Edit Mahasiswa-->
             <div class="modal fade" id="myModal<?php echo $data['id']; ?>" role="dialog">
               <div class="modal-dialog">
               
@@ -108,9 +108,44 @@
                 
               </div>
             </div>
-          <?php               
-          } 
-          ?>
+            <div class="modal fade" id="myModal2<?php echo $data['id']; ?>" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Hapus</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form role="form" action="hapus.php" method="get">
+
+                        <?php
+                        $id = $data['id'];
+                        $query_view = mysqli_query($koneksi, "SELECT * FROM tb_feedback WHERE id='$id'");
+                        //$result = mysqli_query($conn, $query);
+                        while ($row = mysqli_fetch_assoc($query_view)) {  
+                        ?> 
+                        <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                        <p>Anda Yakin Ingin Menghapus?</p>
+                        <div class="modal-footer">  
+                          <button type="submit" class="btn btn-danger">Hapus</button>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+                        </div>
+
+                        <?php 
+                        }
+                        //mysql_close($host);
+                        ?>        
+                      </form>
+                  </div>
+                </div>
+                <?php 
+                        }
+                        //mysql_close($host);
+                        ?>  
+              </div>
+            </div>
         </tbody>
       </table>          
   </div>
