@@ -32,7 +32,6 @@
         <thead>
           <tr>
             <th>No</th>
-            <th>Id</th>
             <th>Nama</th>
             <th>Email</th>
             <th>Saran</th>
@@ -48,7 +47,6 @@
           ?>
             <tr>
               <td><?php echo $no++; ?></td>
-              <td><?php echo $data['id']; ?></td>
               <td><?php echo $data['nama']; ?></td>
               <td><?php echo $data['email']; ?></td>
               <td><?php echo $data['saran']; ?></td>
